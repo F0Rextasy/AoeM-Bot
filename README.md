@@ -54,30 +54,30 @@ py gui.py
 ## Bot Ekran Görüntüleri
 
 ### 1:
-![1](https://github.com/user-attachments/assets/a10d330c-bebc-4037-a862-4d3c12d0772a)
+![1](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/1.PNG)
 
 ### 2:
-![2](https://github.com/user-attachments/assets/98c51bfc-e159-458e-b739-0767d752f78b)
+![2](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/2.PNG)
 
 ### 3:
-![3](https://github.com/user-attachments/assets/300082f8-5b37-48f8-93f1-5df996b54c8f)
+![3](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/3.PNG)
 
 ## Oto Başla Özelliği Kullanımı
 
-![4](https://github.com/user-attachments/assets/aaba01ab-b5a9-467f-8852-f249c38b6297)
+![4](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/4.PNG)
 
 Bu özelliği kullanabilmek için **Bluestacks Çoklu Örnek Yöneticisi** penceresini her zaman açık tutun. Aynı ayar ile birkaç tane emülatör kopyalayın. Bu, pencere kapandığında botun durmaya devam etmesini önleyecektir. Botun mantığı **BAŞLA** butonuna tıklamaktır.
 
 ## BlueStacks Ayarlari
 
 ### 1:
-![5](https://github.com/user-attachments/assets/35e8f205-99e4-44ac-90c8-c1b8c5934f92)
+![5](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/5.PNG)
 
 ### 2:
-![6](https://github.com/user-attachments/assets/c55dff96-6fe4-467a-801e-fa5406b2fa6d)
+![6](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/6.PNG)
 
 ### 3:
-![7](https://github.com/user-attachments/assets/24496ac1-a9a4-4276-8a50-4661d1b780f9)
+![7](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/7.PNG)
 
 **Not:** Bu butonlara **F3** ve **F4** tuşlarını tanıtmayı unutmayın. Klavye editörü kısmından ayarları yapabilirsiniz. Ayrıca, opaklığı düşürün ki tuşlar görünür olmasın.
 

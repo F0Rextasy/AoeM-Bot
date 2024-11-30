@@ -1,0 +1,4 @@
+pyautogui==0.9.54
+pynput==1.7.6
+customtkinter==5.1.2
+pygetwindow==0.0.9

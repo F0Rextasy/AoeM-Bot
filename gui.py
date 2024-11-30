@@ -21,7 +21,7 @@ class BotGUI:
         ctk.set_default_color_theme("dark-blue")  # Varsayılan renk teması
         # Pencereyi her zaman üstte tutacak özellik ekleyin
         root.attributes("-topmost", True)
-        root.iconbitmap('C:\\Users\\Extasy\\Desktop\\aoem\\ikon.ico')
+        root.iconbitmap('ikon.ico')
         self.root = root
         self.selected_window = None  # Seçilen pencereyi tutan değişken
         self.root.title("AoeM - bot © 2024")

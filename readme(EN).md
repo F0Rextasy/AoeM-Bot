@@ -41,30 +41,30 @@ The bot will be continuously updated, and **New** versions will be shared as new
 ## Bot Screenshots
 
 ### 1:
-![1](https://github.com/user-attachments/assets/a10d330c-bebc-4037-a862-4d3c12d0772a)
+![1](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/1.PNG)
 
 ### 2:
-![2](https://github.com/user-attachments/assets/98c51bfc-e159-458e-b739-0767d752f78b)
+![2](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/2.PNG)
 
 ### 3:
-![3](https://github.com/user-attachments/assets/300082f8-5b37-48f8-93f1-5df996b54c8f)
+![3](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/3.PNG)
 
 ## How to Use the Auto Start Feature
 
-![4](https://github.com/user-attachments/assets/aaba01ab-b5a9-467f-8852-f249c38b6297)
+![4](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/4.PNG)
 
 To use this feature, keep the **Bluestacks Multi-Instance Manager** window open at all times. Duplicate the emulator with the same settings. This is important as the bot may continue running even if the window closes. The bot works by clicking the **START** button.
 
 ## BlueStacks Settings
 
 ### 1:
-![5](https://github.com/user-attachments/assets/35e8f205-99e4-44ac-90c8-c1b8c5934f92)
+![5](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/5.PNG)
 
 ### 2:
-![6](https://github.com/user-attachments/assets/c55dff96-6fe4-467a-801e-fa5406b2fa6d)
+![6](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/6.PNG)
 
 ### 3:
-![7](https://github.com/user-attachments/assets/24496ac1-a9a4-4276-8a50-4661d1b780f9)
+![7](https://github.com/F0Rextasy/AoeM-Bot/blob/main/screeenshot/7.PNG)
 
 **Note:** Don’t forget to assign the **F3** and **F4** keys to these buttons. You can do this from the keyboard editor. Also, reduce the opacity so the buttons don’t obstruct the view.
 

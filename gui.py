@@ -402,17 +402,6 @@ class BotGUI:
             )
         self.console(f"Ayarlar kaydedildi: {settings_path}")
 
-    def set_wait_for_click(self, soldier_type):
-        # Özellik.py içindeki fonksiyonu çağır
-        from özellik import set_wait_for_click, start_listener
-
-        # Konsol fonksiyonunu geçici olarak belirle
-        console_func = self.console
-
-        # Tıklama bekleme fonksiyonunu başlat
-        set_wait_for_click(soldier_type, console_func)
-        start_listener(console_func)
-
 
 if __name__ == "__main__":
     root = ctk.CTk()  # CTk ana penceresini oluşturuyoruz

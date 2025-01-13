@@ -595,48 +595,33 @@ def train_units():
 
     print_with_timestamp("Eğitim paneli açıldı, asker eğitimi başlatılıyor...")
 
-    # "panelegitim" açıldıktan sonra, önce "orduya katil" aratılır
-    ordkatil_found = find_and_click_image("ekran/orduyakatil.png")
+    # "panelegitim" açıldıktan sonra, önce "git" aratılır
+    ordkatil_found = find_and_click_image("ekran/git.png")
     if ordkatil_found:
         print_with_timestamp("Asker türü bulundu, eğitim başlatılıyor...")
-        # ordkatil bulunduysa bile, git.png tekrar aranır
-        if find_and_click_image("ekran/git.png"):
-            print_with_timestamp("Git butonu tıklandı, eğitim başlatılıyor...")
+        # git.png bulunduysa bile, git.png tekrar aranır
     else:
-        # "orduya katil" bulunamazsa "git" aranır
-        if find_and_click_image("ekran/git.png"):
-            print_with_timestamp("Git butonu tıklandı, eğitim başlatılıyor...")
-        else:
-            # Hem "orduya katil" hem de "git" bulunmazsa, ekran kaydırılır
-            print_with_timestamp(
-                "Asker türü bulunamadı, ekran kaydırılıyor...")
-            scroll_up()  # Sayfa kaydırma işlemi
-            time.sleep(5)  # Kaydırma sonrası bekleme
+        # Hem "git" hem de "git" bulunmazsa, ekran kaydırılır
+        print_with_timestamp(
+            "Asker türü bulunamadı, ekran kaydırılıyor...")
+        scroll_up()  # Sayfa kaydırma işlemi
+        time.sleep(5)  # Kaydırma sonrası bekleme
 
-            # Kaydırmadan sonra tekrar "orduya katil" arar
-            ordkatil_found_after_scroll = find_and_click_image(
-                "ekran/orduyakatil.png")
-            if ordkatil_found_after_scroll:
+        # Kaydırmadan sonra tekrar "git" arar
+        ordkatil_found_after_scroll = find_and_click_image(
+            "ekran/git.png")
+        if ordkatil_found_after_scroll:
+            print_with_timestamp(
+                "Asker türü bulundu, eğitim başlatılıyor...")
+        else:
+            print_with_timestamp(
+                "Ne asker türü ne de git butonu bulunamadı, işlem sona erdiriliyor.")
+            # Çıkış işlemi ve diğer fonksiyona geçiş
+            if not find_and_click_image("ekran/cikis2.png"):
                 print_with_timestamp(
-                    "Asker türü bulundu, eğitim başlatılıyor...")
-                # ordkatil bulunduysa bile, git.png tekrar aranır
-                if find_and_click_image("ekran/git.png"):
-                    print_with_timestamp(
-                        "Git butonu tıklandı, eğitim başlatılıyor...")
-            else:
-                # Eğer yine bulunmazsa, "git" arar
-                if find_and_click_image("ekran/git.png"):
-                    print_with_timestamp(
-                        "Git butonu tıklandı, eğitim başlatılıyor...")
-                else:
-                    print_with_timestamp(
-                        "Ne asker türü ne de git butonu bulunamadı, işlem sona erdiriliyor.")
-                    # Çıkış işlemi ve diğer fonksiyona geçiş
-                    if not find_and_click_image("ekran/cikis2.png"):
-                        print_with_timestamp(
-                            "Cikis2.png bulunamadı, Esc tuşuna basılıyor...")
-                        pyautogui.press('esc')
-                    return False  # İşlem sonlanır ve diğer fonksiyona geçilir
+                    "Cikis2.png bulunamadı, Esc tuşuna basılıyor...")
+                pyautogui.press('esc')
+            return False  # İşlem sonlanır ve diğer fonksiyona geçilir
 
     # Eğitim butonlarını tıklama
     if not find_and_click_image("ekran/egit.png"):

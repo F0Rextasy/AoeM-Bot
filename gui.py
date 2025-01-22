@@ -24,7 +24,7 @@ class BotGUI:
         root.iconbitmap('ikon.ico')
         self.root = root
         self.selected_window = None  # Seçilen pencereyi tutan değişken
-        self.root.title("AoeM - bot © 2024 v1.01")
+        self.root.title("AoeM - bot © 2024 v2")
         # Genişliği 600, yüksekliği 400 olarak ayarlandı
         self.root.geometry("600x300")
         self.root.resizable(False, False)  # Boyutlandırmayı sabit tut
@@ -42,13 +42,84 @@ class BotGUI:
             "maptas": ctk.BooleanVar(value=False),
             "mapaltin": ctk.BooleanVar(value=False),
             "basla": ctk.BooleanVar(value=True),
+            "language": "TR"  # Default language is Turkish
         }
+
+        self.lang_data = self.load_language_data()
 
         # GUI öğelerinin oluşturulması (butonlar, sekmeler, vb.)
         self.create_gui()
 
         # Ayarları otomatik olarak içe aktar
         self.import_settings()
+
+    def load_language_data(self):
+        # Dil dosyasını yükler
+        try:
+            with open("lang.json", "r", encoding="utf-8") as file:
+                return json.load(file)
+        except FileNotFoundError:
+            print("Dil dosyası bulunamadı, varsayılan dil kullanılacak.")
+            return {"TR": {}, "EN": {}}  # Varsayılan boş veri döndürür
+
+    def change_language(self, lang):
+        self.settings["language"] = lang
+        self.save_settings()
+        self.update_gui_language()
+        self.update_tab_names()
+
+    def update_gui_language(self):
+        lang = self.settings["language"]
+        lang_dict = self.lang_data.get(lang, {})
+
+        # Butonlar ve metinler burada güncellenir
+        self.scan_button.configure(
+            text=lang_dict.get("scan_window", "Pencere Tara"))
+        self.select_button.configure(text=lang_dict.get("select", "Seç"))
+        self.start_stop_button.configure(text=lang_dict.get("start", "BAŞLAT"))
+        self.stop_button.configure(text=lang_dict.get("stop", "DURDUR"))
+        self.status_label.configure(
+            text=lang_dict.get("f2_message", "{F2} ya da"))
+        self.save_settings_button.configure(
+            text=lang_dict.get("save", "Kaydet"))
+        self.import_settings_button.configure(
+            text=lang_dict.get("import", "İçe Aktar"))
+        self.bina_checkbox.configure(text=lang_dict.get("building", "Bina"))
+        self.erzak_checkbox.configure(text=lang_dict.get("food", "Erzak"))
+        self.odun_checkbox.configure(text=lang_dict.get("odun", "Odun"))
+        self.yiyecek_checkbox.configure(
+            text=lang_dict.get("yiyecek", "Yiyecek"))
+        self.altin_checkbox.configure(text=lang_dict.get("altin", "Altın"))
+        self.tas_checkbox.configure(text=lang_dict.get("tas", "Taş"))
+        self.basla_checkbox.configure(
+            text=lang_dict.get("oto_basla", "Oto Başla"))
+        self.asker_checkbox.configure(
+            text=lang_dict.get("train_soldiers", "Asker Eğit"))
+        self.ittifak_checkbox.configure(
+            text=lang_dict.get("alliance_help", "İttifak Yardımı"))
+        self.teknoloji_checkbox.configure(
+            text=lang_dict.get("technology_points", "Teknoloji Puanı"))
+        self.sure_label.configure(text=lang_dict.get("time", "Süre (sn):"))
+        self.update_tab_names()
+        self.selected_window.set(lang_dict.get(
+            "selected_window", "Pencere Seçin"))
+        self.language_menu.set(lang)
+
+    def update_tab_names(self):
+        lang = self.settings.get("language", "TR")
+        lang_dict = self.lang_data.get(lang, {})
+        # Yeni sekme isimleri
+        new_tab_names = {
+            "Basit": lang_dict.get("basit", "Basit"),
+            "Toplama": lang_dict.get("toplama", "Toplama"),
+            "İttifak": lang_dict.get("ittifak", "İttifak"),
+        }
+
+        # CTkTabview içindeki butonların metinlerini güncelle
+        for old_name, new_name in new_tab_names.items():
+            for button in self.tabview._segmented_button.winfo_children():
+                if button.cget("text") == old_name:
+                    button.configure(text=new_name)
 
     def create_gui(self):
         # Pencere Tara kısmı
@@ -62,7 +133,7 @@ class BotGUI:
             width=80)
         self.scan_button.pack(side=tk.LEFT, padx=5)
 
-        self.selected_window = tk.StringVar(
+        self.selected_window = ctk.StringVar(
             value="Pencere Seçin")  # Varsayılan değer
         self.window_list = ctk.CTkComboBox(
             self.window_frame, variable=self.selected_window, values=[])
@@ -100,6 +171,10 @@ class BotGUI:
         # Sol çerçeve (tabview ve süre giriş alanını içerir)
         self.left_frame = ctk.CTkFrame(self.main_frame)
         self.left_frame.pack(side=tk.LEFT, fill="y", expand=True)
+
+        # Sağ çerçeve (konsol alanını içerir)
+        self.right_frame = ctk.CTkFrame(self.main_frame)
+        self.right_frame.pack(side=tk.TOP, fill="both", expand=True)
 
         #  Tabview
         self.tabview = ctk.CTkTabview(self.left_frame, height=1)
@@ -141,22 +216,23 @@ class BotGUI:
         self.features_tab1 = self.tabview.add("Toplama")
 
         # Checkbox'lar
-        self.bina_checkbox = ctk.CTkCheckBox(
+        self.odun_checkbox = ctk.CTkCheckBox(
             self.features_tab1, text="Odun", variable=self.settings["mapodun"])
-        self.bina_checkbox.grid(row=0, column=0, sticky="w", padx=10, pady=2)
+        self.odun_checkbox.grid(row=0, column=0, sticky="w", padx=10, pady=2)
 
-        self.erzak_checkbox = ctk.CTkCheckBox(
+        self.yiyecek_checkbox = ctk.CTkCheckBox(
             self.features_tab1, text="Yiyecek", variable=self.settings["mapyiyecek"])
-        self.erzak_checkbox.grid(row=0, column=1, sticky="w", padx=10, pady=2)
+        self.yiyecek_checkbox.grid(
+            row=0, column=1, sticky="w", padx=10, pady=2)
 
-        self.ittifak_checkbox = ctk.CTkCheckBox(
+        self.tas_checkbox = ctk.CTkCheckBox(
             self.features_tab1, text="Taş", variable=self.settings["maptas"])
-        self.ittifak_checkbox.grid(
+        self.tas_checkbox.grid(
             row=1, column=0, sticky="w", padx=10, pady=2)
 
-        self.asker_checkbox = ctk.CTkCheckBox(
+        self.altin_checkbox = ctk.CTkCheckBox(
             self.features_tab1, text="Altın", variable=self.settings["mapaltin"])
-        self.asker_checkbox.grid(row=1, column=1, sticky="w", padx=10, pady=2)
+        self.altin_checkbox.grid(row=1, column=1, sticky="w", padx=10, pady=2)
 
         # Toplama Sekmesi
         self.features_tab2 = self.tabview.add("İttifak")
@@ -173,8 +249,6 @@ class BotGUI:
 
         # Konsol Alanı
         # Sağ çerçeve (konsol için)
-        self.right_frame = ctk.CTkFrame(self.main_frame)
-        self.right_frame.pack(side=tk.TOP, fill="both", expand=True)
         self.console_text = ctk.CTkTextbox(
             self.right_frame, font=self.custom_font, height=20, width=300)
         self.console_text.pack(side=tk.TOP, fill="both",
@@ -191,8 +265,9 @@ class BotGUI:
         self.save_settings_button.pack(side=tk.RIGHT, padx=0)
 
         # Footer Alanı
-        footer_frame = tk.Frame(root, bg="#2E3B4E", height=40)
+        footer_frame = tk.Frame(self.root, bg="#2E3B4E", height=40)
         footer_frame.pack(side="bottom", fill="x", padx=10, pady=5)
+
         footer_label = tk.Label(footer_frame,
                                 text="F0Rextasy © AoeM-bot 2024",
                                 font=("Helvetica", 10, "bold"),
@@ -201,7 +276,15 @@ class BotGUI:
                                 relief="solid",
                                 bd=1,
                                 padx=10, pady=5)
-        footer_label.pack(fill="both", expand=True)
+        # Footer label sol tarafa yerleştirildi
+        footer_label.pack(fill="both", expand=True, side=tk.LEFT)
+
+        # Dil Seçimi (Footer'a eklenip en sağa yerleştirildi)
+        self.language_menu = ctk.CTkOptionMenu(
+            footer_frame, values=["TR", "EN", "ES", "FR", "DE", "ID", "PT", "IT", "TH", "AR", "RU", "ZH-TW", "ZH-CN", "JA", "KO"],  command=self.change_language)
+        self.language_menu.set(self.settings["language"])
+        # Sağ tarafa yerleştirildi
+        self.language_menu.pack(side=tk.RIGHT, padx=5)
 
         # F2 tuşuna basıldığında toggle_start_stop fonksiyonunu çağırıyoruz
         self.root.bind("<F2>", self.toggle_start_stop_from_key)
@@ -210,8 +293,17 @@ class BotGUI:
         self.toggle_start_stop()
 
     def toggle_start_stop(self):
-        if self.start_stop_button.cget("text") == "BAŞLAT":
-            self.start_stop_button.configure(text="DURDUR")
+        # Mevcut dili ve dil ayarlarını al
+        lang = self.settings.get("language", "TR")  # Varsayılan dil TR
+        lang_dict = self.lang_data.get(lang, {})
+
+        # Dil sözlüğünden buton metinlerini çek
+        start_text = lang_dict.get("start", "BAŞLAT")
+        stop_text = lang_dict.get("stop", "DURDUR")
+
+        if self.start_stop_button.cget("text") == start_text:
+            # Buton metnini DURDUR olarak güncelle
+            self.start_stop_button.configure(text=stop_text)
             self.start_bot_in_thread()
 
             # Pencereyi küçült
@@ -226,18 +318,20 @@ class BotGUI:
             self.import_settings_button.pack_forget()
             self.sure_frame.pack_forget()
             self.left_frame.pack_forget()
-           # Konsol varsa, onu doğru yere yerleştir
+
+            # Konsol varsa doğru yere yerleştir
             if not hasattr(self, 'console_text'):
                 self.console_text = ctk.CTkTextbox(
                     self.right_frame, font=self.custom_font, height=20, width=300)
-            self.console_text.pack(side=tk.TOP, fill="both",
-                                   expand=True, padx=(5, 0))
+            self.console_text.pack(
+                side=tk.TOP, fill="both", expand=True, padx=(5, 0))
 
             # "F2 ile durdurabilirsin" mesajını göster
             self.status_label.pack(anchor="e", padx=10)
 
         else:
-            self.start_stop_button.configure(text="BAŞLAT")
+            # Buton metnini BAŞLAT olarak güncelle
+            self.start_stop_button.configure(text=start_text)
             self.stop_bot_in_thread()
 
             # Pencereyi eski haline getir
@@ -253,12 +347,15 @@ class BotGUI:
             self.sure_frame.pack(anchor="w", padx=10, pady=5, fill="x")
             self.left_frame.pack(side=tk.LEFT, fill="y", expand=True)
             self.right_frame.pack(side=tk.RIGHT, fill="both", expand=True)
+
             # Konsolu sağ frame'e yeniden ekle
             if not hasattr(self, 'console_text'):
+                self.right_frame = ctk.CTkFrame(self.main_frame)
+                self.right_frame.pack(side=tk.TOP, fill="both", expand=True)
                 self.console_text = ctk.CTkTextbox(
-                    self.right_frame, font=self.custom_font, height=20, width=300)
-                self.console_text.pack(
-                    side=tk.TOP, fill="both", expand=True, padx=5, pady=0)
+                    self.right_frame, font=self.custom_font)
+                self.console_text.pack(side=tk.TOP, fill="both",
+                                       expand=True, padx=(5, 0))
 
             # "F2 ile durdurabilirsin" mesajını gizle
             self.status_label.pack_forget()
@@ -377,6 +474,11 @@ class BotGUI:
             else:
                 self.console(
                     f"Hata: '{key}' anahtarı ayar dosyasında bulunamadı.")
+
+        # Dil ayarını güncelle
+        # Varsayılan olarak "TR" dilini al
+        language = settings.get("language", "TR")
+        self.change_language(language)  # Dil değişikliğini uygula
 
         self.console(f"Ayarlar içe aktarıldı: {settings_path}")
 

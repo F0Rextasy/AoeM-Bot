@@ -15,14 +15,14 @@
 
 **AoeM-bot** is a bot designed to automate the **Age of Empire Mobile** game. It is developed using **Python** and the **PyAutoGui** library.
 
-> ### Click the **KAYDET** button after every setting change. The bot performs actions by reading the **ayarlar.json** file.
+> ### Click the **SAVE** button after every setting change. The bot performs actions by reading the **ayarlar.json** file.
 
 > ### **Attention:**  
 > ### While this bot is running, you cannot perform other tasks on your computer. The game screen must always be visible.
 
 The bot will be continuously updated, and **New** versions will be shared as new features are added.
 
-**Suggestions and feedback are welcome. You can reach me through the [Telegram address](https://t.me/aoembot_extasy).**
+**Suggestions and feedback are welcome. You can reach me through the [Telegram address](https://t.me/bigbullsup).**
 
 
 ## Features

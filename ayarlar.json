@@ -9,5 +9,6 @@
     "maptas": false,
     "mapyiyecek": false,
     "mapaltin": false,
-    "basla": true
+    "basla": false,
+    "language": "TR"
 }

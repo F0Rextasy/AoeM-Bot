@@ -22,7 +22,7 @@
 
 Bot sürekli olarak güncellenecek ve yeni özellikler eklendikçe **Yeni** sürümleri paylaşılacaktır.
 
-**Öneri ve görüşleriniz için [Telegram adresimden](https://t.me/aoembot_extasy) bana ulaşabilirsiniz.**
+**Öneri ve görüşleriniz için [Telegram adresimden](https://t.me/bigbullsup) bana ulaşabilirsiniz.**
 
 ## Bot Start:
 
@@ -82,14 +82,42 @@ Bu özelliği kullanabilmek için **Bluestacks Çoklu Örnek Yöneticisi** pence
 **Not:** Bu butonlara **F3** ve **F4** tuşlarını tanıtmayı unutmayın. Klavye editörü kısmından ayarları yapabilirsiniz. Ayrıca, opaklığı düşürün ki tuşlar görünür olmasın.
 
 ---
+# Update v2.0 - Büyük Güncelleme 🚀
+
+**Yeni Dil Seçenekleri Artık Mevcut! 🌍**
+
+Botumuza önemli bir güncelleme geldi! Şimdi daha fazla dil desteği ile dünya çapında kullanıcılarımıza daha iyi bir deneyim sunuyoruz. Yeni eklenen diller ile botunuzu kendi dilinizde kullanabilirsiniz. Dil seçeneklerimiz artık şu dillerde mevcut:
+
+- **Türkçe (TR)**
+- **English (EN)**
+- **Español (ES)**
+- **Français (FR)**
+- **Deutsch (DE)**
+- **Bahasa Indonesia (ID)**
+- **Português (PT)**
+- **Italiano (IT)**
+- **ภาษาไทย (TH)**
+- **العربية (AR)**
+- **Русский (RU)**
+- **繁體中文 (ZH-TW)**
+- **简体中文 (ZH-CN)**
+- **日本語 (JA)**
+- **한국어 (KO)**
+
+### Yeni Dil Seçenekleri ile Daha Kolay Kullanım! 🌐
+
+Bu güncellemeyle birlikte botunuzu artık daha fazla dilde kullanabilirsiniz! Dil seçeneklerinizi kolayca değiştirebilir ve botu istediğiniz dilde kullanarak tüm özelliklerinden faydalanabilirsiniz.
+
+---
+
 
 ## Yeni Güncellemelerde Olabilecek Özellikler
 
-| Özellik              | Açıklama                                                |
-|----------------------|---------------------------------------------------------|
-| ⚡ **Keşif Gözetleme Görevleri** | Keşif kısmındaki görevleri otomatik yapabilme yeteneği. |
-| 🌍 **Farklı Dil Seçenekleri** | Türkçe ve İngilizce dillerini destekleme.               |
-| 🏆 **Günlük VIP Ödülleri** | Günlük VIP ödülünü ve sandığı almak |
+| Özellik              | Açıklama                                                | Update  |
+|----------------------|---------------------------------------------------------|------------------|
+| ⚡ **Keşif Gözetleme Görevleri** | Keşif kısmındaki görevleri otomatik yapabilme yeteneği. | |
+| 🌍 **Farklı Dil Seçenekleri** | Türkçe ve İngilizce dillerini destekleme.               | ✅ |
+| 🏆 **Günlük VIP Ödülleri** | Günlük VIP ödülünü ve sandığı almak | |
 
 **Bu konuda Öneri ve görüşlere açığım. Sayfa başındaki telegram adresinden ulaşabilirsiniz..**
 

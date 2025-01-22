@@ -318,6 +318,7 @@ class BotGUI:
             self.import_settings_button.pack_forget()
             self.sure_frame.pack_forget()
             self.left_frame.pack_forget()
+            self.language_menu.pack_forget()
 
             # Konsol varsa doğru yere yerleştir
             if not hasattr(self, 'console_text'):
@@ -347,6 +348,7 @@ class BotGUI:
             self.sure_frame.pack(anchor="w", padx=10, pady=5, fill="x")
             self.left_frame.pack(side=tk.LEFT, fill="y", expand=True)
             self.right_frame.pack(side=tk.RIGHT, fill="both", expand=True)
+            self.language_menu.pack(side=tk.RIGHT, padx=5)
 
             # Konsolu sağ frame'e yeniden ekle
             if not hasattr(self, 'console_text'):

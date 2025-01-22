@@ -24,7 +24,7 @@ class BotGUI:
         root.iconbitmap('ikon.ico')
         self.root = root
         self.selected_window = None  # Seçilen pencereyi tutan değişken
-        self.root.title("AoeM - bot © 2024 v2")
+        self.root.title("AoeM - bot © 2025 v2")
         # Genişliği 600, yüksekliği 400 olarak ayarlandı
         self.root.geometry("600x300")
         self.root.resizable(False, False)  # Boyutlandırmayı sabit tut

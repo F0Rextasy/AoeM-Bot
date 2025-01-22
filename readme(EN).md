@@ -69,16 +69,43 @@ To use this feature, keep the **Bluestacks Multi-Instance Manager** window open 
 **Note:** Don’t forget to assign the **F3** and **F4** keys to these buttons. You can do this from the keyboard editor. Also, reduce the opacity so the buttons don’t obstruct the view.
 
 ---
+# Update v2.0 - Major Update 🚀
 
-## Possible Features in Upcoming Updates
+**New Language Options Now Available! 🌍**
 
-| Feature               | Description                                               |
-|-----------------------|-----------------------------------------------------------|
-| ⚡ **Exploration Watch Tasks** | Ability to automatically perform exploration tasks.       |
-| 🌍 **Multi-language Support** | Support for languages like Turkish and English.           |
-| 🏆 **Daily VIP Rewards** | Ability to collect daily VIP rewards and chests.          |
+The bot has received a major update! Now, with more language support, we offer an enhanced experience for our users worldwide. With the newly added languages, you can now use the bot in your preferred language. The available languages are:
 
-**Suggestions and feedback are welcome. You can reach me through the Telegram address at the top of the page.**
+- **Türkçe (TR)**
+- **English (EN)**
+- **Español (ES)**
+- **Français (FR)**
+- **Deutsch (DE)**
+- **Bahasa Indonesia (ID)**
+- **Português (PT)**
+- **Italiano (IT)**
+- **ภาษาไทย (TH)**
+- **العربية (AR)**
+- **Русский (RU)**
+- **繁體中文 (ZH-TW)**
+- **简体中文 (ZH-CN)**
+- **日本語 (JA)**
+- **한국어 (KO)**
+
+### Easier Usage with New Language Options! 🌐
+
+With this update, you can now use the bot in more languages! You can easily change your language preferences and enjoy all the features of the bot in the language of your choice.
+
+---
+
+## Possible Features in Future Updates
+
+| Feature               | Description                                              | Update  |
+|-----------------------|----------------------------------------------------------|------------------|
+| ⚡ **Exploration Surveillance Missions** | Ability to automatically perform exploration tasks.  | |
+| 🌍 **Different Language Options** | Support for Turkish and English languages.             | ✅ |
+| 🏆 **Daily VIP Rewards** | Collect daily VIP rewards and chests.                  | |
+
+**I am open to suggestions and feedback. Feel free to reach out via the Telegram address at the top of the page.**
 
 ---
 ## Want to Contribute?

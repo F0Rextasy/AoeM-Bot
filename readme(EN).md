@@ -5,9 +5,10 @@
 3. 🖼️ [Bot Screenshots](#bot-screenshots)
 4. 🚀 [How to Use the Auto Start Feature](#how-to-use-the-auto-start-feature)
 5. ⚡ [BlueStacks Settings](#bluestacks-settings)
-6. 🔮 [Possible Features in Upcoming Updates](#possible-features-in-upcoming-updates)
-7. 💖 [Want to Contribute](#want-to-contribute)
-8. 📜 [License](#license)
+6. 🔮 [Possible Features in Future Updates](#possible-features-in-future-updates)
+7. 🤝 [How to Contribute?](#-how-to-contribute)
+8. 💖 [Want to Contribute](#want-to-contribute)
+9. 📜 [License](#license)
 
 ---
 
@@ -111,6 +112,25 @@ With this update, you can now use the bot in more languages! You can easily chan
 [![Stargazers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/stars/dark/F0Rextasy/AoeM-Bot/)](https://github.com/F0Rextasy/AoeM-Bot/stargazers)
 ### 🍴 Forkers:
 [![Forkers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/forks/dark/F0Rextasy/AoeM-Bot)](https://github.com/F0Rextasy/AoeM-Bot/network/members)
+
+## 🤝 How to Contribute?
+
+1. **Star the Project** ⭐  
+   By starring this project on GitHub, you can help it reach more people.
+
+2. **Fork the Repository** 🍴  
+   Fork the repo and make your own developments.
+
+3. **Make Changes and Submit a PR** 🚀  
+   After making changes in your forked repository, submit a _Pull Request_ to contribute to this project.
+
+4. **Report Issues** 🐞  
+   If you find any bugs or have suggestions, please share them through the _Issues_ section.
+
+---
+
+Stay updated by **starring and forking the project**!  
+Your feedback and contributions are highly appreciated. 💬  
 
 ---
 ## Want to Contribute?

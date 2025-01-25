@@ -7,8 +7,9 @@
 5. 🚀 [Oto Başla Özelliği Kullanımı](#oto-başla-özelliği-kullanımı)
 6. ⚙️ [BlueStacks Ayarları](#bluestacks-ayarlari)
 7. 🔮 [Yeni Güncellemelerde Olabilecek Özellikler](#yeni-güncellemelerde-olabilecek-özellikler)
-8. 💖 [Katkı Sağlamak İster Misiniz?](#bağış)
-9. 📜 [Lisans](#lisans)
+8. 🤝 [Nasıl Katkıda Bulunabilirsiniz?](#nasıl-katkıda-bulunabilirsiniz-)
+9. 💖 [Katkı Sağlamak İster Misiniz?](#bağış)
+10. 📜 [Lisans](#lisans)
 
 ---
 # AoeM-bot
@@ -125,6 +126,25 @@ Bu güncellemeyle birlikte botunuzu artık daha fazla dilde kullanabilirsiniz! D
 [![Stargazers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/stars/dark/F0Rextasy/AoeM-Bot/)](https://github.com/F0Rextasy/AoeM-Bot/stargazers)
 ### 🍴 Forkers:
 [![Forkers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/forks/dark/F0Rextasy/AoeM-Bot)](https://github.com/F0Rextasy/AoeM-Bot/network/members)
+
+## Nasıl Katkıda Bulunabilirsiniz ?
+
+1. **Projeyi Yıldızlayın** ⭐  
+   Bu projeyi GitHub'da yıldızlayarak daha fazla kişiye ulaşmasına yardımcı olabilirsiniz.
+
+2. **Projeyi Çatallayın** 🍴  
+   Depoyu çatallayıp kendi geliştirmelerinizi yapabilirsiniz.
+
+3. **Geliştirme Yapın ve PR Gönderin** 🚀  
+   Çatalladığınız depoda geliştirme yapıp, bu depoya bir _Pull Request_ göndererek katkıda bulunabilirsiniz.
+
+4. **Sorun Bildirin** 🐞  
+   Projede bir hata bulduysanız ya da bir öneriniz varsa, _Issues_ sekmesinden paylaşabilirsiniz.
+
+---
+
+Gelişmelerden haberdar olmak için lütfen projeyi **yıldızlayıp çatallayın**!  
+Her türlü katkı ve geri bildirim bizim için çok değerli. 💬  
 
 ## Bağış
 

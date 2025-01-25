@@ -121,6 +121,11 @@ Bu güncellemeyle birlikte botunuzu artık daha fazla dilde kullanabilirsiniz! D
 
 **Bu konuda Öneri ve görüşlere açığım. Sayfa başındaki telegram adresinden ulaşabilirsiniz..**
 
+### ⭐ Stargazers:
+[![Stargazers repo roster for @Kennix88/Token-Giver](https://reporoster.com/stars/dark/F0Rextasy/AoeM-Bot/)](https://github.com/F0Rextasy/AoeM-Bot/stargazers)
+### 🍴 Forkers:
+[![Forkers repo roster for @Kennix88/Token-Giver](https://reporoster.com/forks/dark/F0Rextasy/AoeM-Bot)](https://github.com/F0Rextasy/AoeM-Bot/network/members)
+
 ## Bağış
 
 Birçok kişi, benzer botları aylık 25$ gibi ücretlerle satarken, ben bu botu tamamen **ücretsiz** olarak sunuyorum. Emeğimin karşılığında desteğinizi bekliyorum. Eğer bu projeyi beğendiyseniz ve katkıda bulunmak isterseniz, aşağıdaki **USDT BEP20** adresine bağış yapabilirsiniz:

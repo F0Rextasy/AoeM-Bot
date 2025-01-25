@@ -122,9 +122,9 @@ Bu güncellemeyle birlikte botunuzu artık daha fazla dilde kullanabilirsiniz! D
 **Bu konuda Öneri ve görüşlere açığım. Sayfa başındaki telegram adresinden ulaşabilirsiniz..**
 
 ### ⭐ Stargazers:
-[![Stargazers repo roster for @Kennix88/Token-Giver](https://reporoster.com/stars/dark/F0Rextasy/AoeM-Bot/)](https://github.com/F0Rextasy/AoeM-Bot/stargazers)
+[![Stargazers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/stars/dark/F0Rextasy/AoeM-Bot/)](https://github.com/F0Rextasy/AoeM-Bot/stargazers)
 ### 🍴 Forkers:
-[![Forkers repo roster for @Kennix88/Token-Giver](https://reporoster.com/forks/dark/F0Rextasy/AoeM-Bot)](https://github.com/F0Rextasy/AoeM-Bot/network/members)
+[![Forkers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/forks/dark/F0Rextasy/AoeM-Bot)](https://github.com/F0Rextasy/AoeM-Bot/network/members)
 
 ## Bağış
 

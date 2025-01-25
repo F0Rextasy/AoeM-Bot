@@ -107,6 +107,11 @@ With this update, you can now use the bot in more languages! You can easily chan
 
 **I am open to suggestions and feedback. Feel free to reach out via the Telegram address at the top of the page.**
 
+### ⭐ Stargazers:
+[![Stargazers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/stars/dark/F0Rextasy/AoeM-Bot/)](https://github.com/F0Rextasy/AoeM-Bot/stargazers)
+### 🍴 Forkers:
+[![Forkers repo roster for @F0Rextasy/AoeM-Bot](https://reporoster.com/forks/dark/F0Rextasy/AoeM-Bot)](https://github.com/F0Rextasy/AoeM-Bot/network/members)
+
 ---
 ## Want to Contribute?
 
